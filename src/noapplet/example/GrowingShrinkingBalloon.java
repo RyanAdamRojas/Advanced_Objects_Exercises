@@ -3,10 +3,10 @@ package noapplet.example;
 import javax.swing.*;
 import java.awt.*;
 
-public class AnimateBalloon2 extends AnimateBalloon {
+public class Balloon2 extends Balloon {
     protected int delay = 20;
 
-    public AnimateBalloon2(){
+    public Balloon2(){
         dim = getSize();
         timer = new Timer(delay, e -> { // Events occur every 20ms
             if (isGrowing) {
@@ -39,6 +39,6 @@ public class AnimateBalloon2 extends AnimateBalloon {
     }
 
     public static void main(String[] args) {
-        new AnimateBalloon2().run();
+        new Balloon2().run();
     }
 }

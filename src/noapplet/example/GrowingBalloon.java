@@ -12,7 +12,7 @@ import java.awt.Color;
  *
  * @author Ryan Rojas
  */
-public class AnimateBalloon extends noapplet.NoApplet {
+public class Balloon extends noapplet.NoApplet {
     protected Dimension dim;
     protected Timer timer; // Animation timer
 
@@ -20,7 +20,7 @@ public class AnimateBalloon extends noapplet.NoApplet {
     protected int delay = 100; // Milliseconds
     protected boolean isGrowing = true;
 
-    public AnimateBalloon(){
+    public Balloon(){
         dim = getSize();
         timer = new Timer(delay, e -> { // Events occur every 100ms
             if (isGrowing) {
@@ -56,7 +56,7 @@ public class AnimateBalloon extends noapplet.NoApplet {
     }
 
     public static void main(String[] args) {
-        new AnimateBalloon().run();
+        new Balloon().run();
     }
 }
 
